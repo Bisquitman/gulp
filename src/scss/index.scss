@@ -1,0 +1,9 @@
+@import 'normalize';
+@import 'variables';
+@import 'settings';
+
+$red: yellow;
+
+h1 {
+  color: $red;
+}
