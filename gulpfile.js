@@ -8,6 +8,7 @@ const del = require('del');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const sync = require('browser-sync').create();
+const gcmq = require('gulp-group-css-media-queries');
 // const babel = require('gulp-babel');
 
 function html() {
@@ -44,6 +45,7 @@ function scss() {
     }))
     .pipe(csso())
     .pipe(concat('style.min.css'))
+    .pipe(gcmq())
     .pipe(sourcemaps.write())
     .pipe(dest('dist/css'))
 }
