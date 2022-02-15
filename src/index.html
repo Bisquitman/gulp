@@ -1,13 +1,21 @@
-@@include('parts/header.html')
+@@include('parts/head.html', {
+"title":"Главная",
+})
 
-<h1>Home page</h1>
+@@include('parts/header.html', {})
 
-<ul>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-</ul>
+<main class="main">
+  <div class="main__container">
+    <h1>Home page</h1>
 
-@@include('parts/footer.html')
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+</main>
+
+@@include('parts/footer.html', {})

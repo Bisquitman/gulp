@@ -1,5 +1,13 @@
-@@include('parts/header.html')
+@@include('parts/head.html', {
+"title":"About",
+})
 
-<h1>About page</h1>
+@@include('parts/header.html', {})
 
-@@include('parts/footer.html')
+<main class="main">
+  <div class="main__container">
+    <h1>About page</h1>
+  </div>
+</main>
+
+@@include('parts/footer.html', {})
